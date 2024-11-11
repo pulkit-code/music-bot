@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis - Music Recommendation Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Jarvis - Music Recommendation Bot</h1>
+        <form method="POST">
+            <input type="text" name="user_input" placeholder="Enter your text here..." required>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="message">
+            <p>{{ message }}</p>
+        </div>
+    </div>
+</body>
+</html>
